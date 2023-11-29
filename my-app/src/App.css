@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@500&display=swap");
+
+.App {
+  text-align: center;
+}
+
+/* background  */
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    #86b7fe 3%,
+    rgba(60, 132, 206, 1) 38%,
+    rgba(48, 238, 226, 1) 68%,
+    #56fcd2 98%
+  );
+  animation: gradient 20s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* title */
+.headerTitle {
+  position: relative;
+  text-shadow: -15px 5px 20px #ced0d3;
+  color: white;
+  letter-spacing: -0.15em;
+  font-family: "Archivo Black", sans-serif;
+  user-select: none;
+  text-transform: capitalize;
+  font-size: 150px;
+  transition: all 0.25s ease-out;
+}
+
+/* card */
+.cardContainer {
+  position: relative;
+}
+
+.editIcon {
+  width: 25px;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.editIcon:hover {
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0px, -10px) scale(1.2);
+  transform: translate(0px, -10px) scale(1.2);
+}
+
+.editBtn {
+  background-color: none;
+}
